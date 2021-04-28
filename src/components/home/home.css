@@ -1,0 +1,185 @@
+.wrapperHomeContainer {
+  background-image: radial-gradient(#444444, #232322, #131312);
+  background-position: center;
+  height: 100vh;
+}
+
+/* ipad view */
+@media screen and (max-width: 770px) {
+  .headerHome {
+    display: none;
+  }
+  .wrapperHamburgerHome {
+    color: #9a8e8e;
+    font-size: xx-large;
+  }
+  .test {
+    overflow: hidden;
+  }
+  .wrapperDropdownHome {
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+  }
+
+  @keyframes drop {
+    0% {
+    }
+    100% {
+      transform: translateY(305px);
+    }
+  }
+
+  .fa-volleyball-ball {
+    padding: 0px !important;
+    font-weight: 500 !important;
+  }
+  .wrapperHamburgerRoutesHome {
+    margin: -5px;
+    list-style: none;
+    padding: 80px 5px;
+    font-size: 32px;
+    background: rgb(51 51 51);
+  }
+  .hamburgerRoutesHome {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 3px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .activeHamburgerIconHome {
+    cursor: pointer;
+
+    padding: 40px 40px;
+    position: fixed;
+  }
+}
+.hamburgerIconHome {
+  cursor: pointer;
+
+  padding: 40px 40px;
+  position: fixed;
+}
+
+/* mobile view  */
+@media screen and (max-width: 650px) {
+  .wrapperHamburgerRoutesHome {
+    /* width: 420px; */
+    font-size: 20px;
+  }
+  .activeHamburgerIconHome {
+    font-size: 25px;
+  }
+  .hamburgerIconHome {
+    font-size: 25px;
+  }
+
+  /* 
+  .wrapperDropdownHome {
+    animation: drop 0.5s ease forwards;
+  }
+  @keyframes drop {
+    0% {
+    }
+    100% {
+      transform: translateY(300px);
+    }
+  } */
+}
+
+/* desktop view  */
+@media screen and (min-width: 770px) {
+  .wrapperHamburgerHome {
+    display: none;
+  }
+  .headerHome {
+    display: flex;
+    height: 50px;
+    padding: 50px 40px;
+  }
+  .smallLogoContainerHome {
+    display: flex;
+  }
+  .smallLogoHome {
+    width: 130px;
+    background-image: url('../../assets/jcat_logo_white.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+  }
+  .navHome {
+    font-family: 'Mukta', sans-serif;
+    color: #fafafa;
+    width: 100%;
+  }
+  .wrapperDesktopRoutesHome {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    text-transform: uppercase;
+  }
+  .desktopRoutesHome {
+    margin: 0px 50px;
+    cursor: pointer;
+  }
+  .desktopRoutesHomeAbout {
+    margin: 0px 0px 0px 50px;
+    cursor: pointer;
+  }
+  .desktopRoutesHomeAbout:hover,
+  .desktopRoutesHome:hover {
+    color: #006c87;
+  }
+  .homeLink {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.logoContainer {
+  position: absolute;
+  top: 41%;
+  right: 50%;
+}
+.logo {
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../assets/JACT_white.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16vh;
+  position: relative;
+  right: -50%;
+}
+.wrapperFooter {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  padding: 40px 40px 15px 40px;
+  justify-content: flex-end;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.icons:hover {
+  color: #5a4a0d;
+}
+.icons {
+  padding: 0px !important;
+  font-size: 20px;
+  color: #706161;
+}

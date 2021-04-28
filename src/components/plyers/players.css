@@ -1,0 +1,224 @@
+/* ipad view */
+@media screen and (max-width: 770px) {
+  .headerPlayers {
+    display: none;
+  }
+  .wrapperHamburgerPlayer {
+    color: #9a8e8e;
+    font-size: xx-large;
+    width: 100%;
+  }
+  .wrapperDropdownPlayer {
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .testPlayers {
+    overflow: hidden;
+  }
+
+  @keyframes drop {
+    0% {
+    }
+    100% {
+      transform: translateY(305px);
+    }
+  }
+  .iconActive {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .fa-volleyball-ball {
+    padding: 0px !important;
+    font-weight: 500 !important;
+  }
+  .wrapperHamburgerRoutesPlayer {
+    margin: -5px;
+    list-style: none;
+    padding: 80px 5px;
+    font-size: 32px;
+    background: rgb(51 51 51);
+  }
+  .hamburgerRoutesPlayer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 3px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .activehamburgerIconPlayer {
+    cursor: pointer;
+    padding: 40px 40px;
+    position: fixed;
+  }
+  .hamburgerIconPlayer {
+    cursor: pointer;
+    padding: 40px 40px;
+    position: fixed;
+    width: 100%;
+  }
+  .wrapperPlayerContainer {
+    padding: 110px 0px 20px 0px !important;
+  }
+}
+
+/* mobile view  */
+@media screen and (max-width: 650px) {
+  .wrapperHamburgerRoutesPlayer {
+    /* width: 420px; */
+    font-size: 20px;
+  }
+
+  .hamburgerIconPlayer {
+    font-size: 25px;
+  }
+  .activehamburgerIconPlayer {
+    font-size: 25px;
+  }
+
+  /* .wrapperDropdownPlayer {
+    animation: drop 0.5s ease forwards;
+  }
+  @keyframes drop {
+    0% {
+    }
+    100% {
+      transform: translateY(300px);
+    }
+  } */
+}
+
+/* desktop view  */
+@media screen and (min-width: 770px) {
+  .wrapperHamburgerPlayer {
+    display: none;
+  }
+  .headerPlayers {
+    display: flex;
+    height: 50px;
+    padding: 50px 40px;
+    width: 100%;
+  }
+  .smallLogoContainer {
+    display: flex;
+  }
+  .smallLogoPlayerPage {
+    width: 130px;
+    background-image: url('../../assets/logo2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+  }
+  .navPlayer {
+    font-family: 'Mukta', sans-serif;
+    color: #fafafa;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .wrapperDesktopRoutesPlayers {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  .desktopRoutesPlayers {
+    margin: 0px 50px;
+    cursor: pointer;
+  }
+  .desktopRoutesPlayersAbout {
+    margin: 0px 0px 0px 50px;
+    cursor: pointer;
+  }
+
+  .link {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.clientsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url('../../assets/JACT_white.png');
+  background-repeat: repeat;
+  background-size: 30% 30%;
+  height: 100%;
+}
+
+.wrapperPlayerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px 0px 20px 0px;
+}
+.wrapperHeaderClients {
+  width: 100%;
+}
+
+.headerClients {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 20px 0px;
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 0.5px 0.5px 2px #3e3e3e;
+}
+
+.fa-user-edit {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  padding-right: 5px;
+}
+
+.wrapperPlayer {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 2px 2px 20px rgb(0 0 0);
+  margin: 10px;
+  width: 275px;
+}
+.wrapperImg {
+  display: flex;
+  justify-content: center;
+}
+
+.playerImg {
+  width: 250px;
+  height: 240px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.wrapperDesc {
+  font-family: 'Mukta', sans-serif;
+  padding: 10px;
+}
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.desc {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px) {
+  .containerClients {
+    background-size: 34% 8%;
+  }
+}

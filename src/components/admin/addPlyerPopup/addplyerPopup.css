@@ -1,0 +1,60 @@
+.formContainer {
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 2px;
+  padding-top: 40px;
+  box-shadow: 0px 0px 30px #332b24;
+  height: 370px;
+  font-family: 'Mukta', sans-serif;
+}
+.title {
+  justify-content: center;
+  display: flex;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.wrapperForm {
+  padding: 10px;
+}
+
+.wrapperImageFile {
+  padding-bottom: 10px;
+}
+
+.imageFile {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.wrapperPlayerName {
+  padding-bottom: 10px;
+}
+.playerName {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.wrapperBtnAdd {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.btnAdd {
+  width: 110px;
+  color: black;
+  background: white;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+}
+
+.btnAdd:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}

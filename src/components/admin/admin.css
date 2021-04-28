@@ -1,0 +1,25 @@
+@media screen and (min-width: 770px) {
+  .adminContainer {
+    display: flex;
+  }
+  .addPlyerPopup {
+    width: 30%;
+    display: flex;
+    padding: 25px;
+  }
+  .wrapperPlayerList {
+    width: 70%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .addPlyerPopup {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+  }
+  .wrapperPlayerList {
+    padding: 15px;
+  }
+}

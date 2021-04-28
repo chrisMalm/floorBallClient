@@ -1,0 +1,56 @@
+.containerPlayer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wrapperPlayer {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 2px 2px 20px rgb(0 0 0);
+  margin: 10px;
+  width: 275px;
+}
+.wrapperImg {
+  display: flex;
+  justify-content: center;
+}
+
+.playerImg {
+  width: 250px;
+  height: 240px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.wrapperDesc {
+  font-family: 'Mukta', sans-serif;
+  padding: 10px;
+}
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.desc {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.wrapperBtnDelete {
+  float: right;
+}
+
+.btnDelete {
+  width: 70px;
+  color: #ffffff;
+  background: #353535;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Mukta', sans-serif;
+}
+i {
+  padding-left: 5px;
+}
