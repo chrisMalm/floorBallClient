@@ -86,6 +86,7 @@ export const Plyers = () => {
           return (
             <div className='wrapperPlayer' key={player._id}>
               <div className='wrapperImg'>
+                <span class='fas fa-search-plus icon'></span>
                 <img
                   className='playerImg'
                   src={`${API_URL}/uploads/${player.img}`}

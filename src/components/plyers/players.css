@@ -194,9 +194,30 @@
   margin: 10px;
   width: 200px;
 }
+
 .wrapperImg {
   display: flex;
   justify-content: center;
+}
+.wrapperImg:hover {
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #dbdbdb;
+  opacity: 0;
+  height: 180px;
+  width: 180px;
+  background-color: #0000003b;
+  font-size: 28px;
+}
+.icon:hover {
+  opacity: 1;
 }
 
 .playerImg {
