@@ -14,7 +14,6 @@ export const AddPlyerPopup = (props) => {
   const logout = () => {
     localStorage.removeItem('loggedIn');
     history.push('/');
-    console.log('hej');
   };
 
   const onSubmit = (playerData, e) => {

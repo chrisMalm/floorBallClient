@@ -236,10 +236,6 @@
   font-weight: 600;
   text-transform: uppercase;
 }
-.desc {
-  font-size: 12px;
-  text-transform: uppercase;
-}
 
 @media screen and (max-width: 650px) {
   .containerClients {
@@ -250,12 +246,13 @@
 /* popup  */
 
 .popupContainer {
-  height: 500px;
+  height: 400px;
   width: 450px;
-  background-color: #ebebeb;
+  background-color: #2d2a2a;
   position: fixed;
   top: 10%;
   z-index: 5;
+  border-radius: 2px;
 }
 .wrapperCloseClientPopup {
   display: flex;
@@ -264,10 +261,64 @@
 .closeClientPopup {
   display: flex;
   justify-content: center;
-  background: #ebebeb;
-  color: #101010;
+  background: #2d2a2a;
+  color: #fafafa;
   font-size: 18px;
   font-weight: 600;
-  margin: 20px;
+  margin: 10px 20px;
   cursor: pointer;
+}
+.wrapperDescription {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  margin: 0px 34px;
+  background: #222020;
+  height: 315px;
+  box-shadow: 0px 0px 30px #575454;
+  border-radius: 2px;
+  overflow: scroll;
+}
+.wrapperDescLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+  margin: 20px;
+}
+.descLogo {
+  width: 130px;
+  height: 25px;
+  background-image: url('../../assets/jcat_logo_white.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.description {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Mukta', sans-serif;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  color: #fafafa;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* overflow: scroll; */
+  margin: 0px 20px 20px 20px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* popup media queries  */
+
+@media screen and (max-width: 650px) {
+  .popupContainer {
+    height: 400px;
+    width: 300px;
+  }
 }

@@ -9,6 +9,12 @@ export const Plyers = () => {
   const [playerList, setPlayerList] = useState([]);
   const [menyActive, setMenyActive] = useState(false);
   const [showPopUp, setShowPopUp] = useState(false);
+  const [showDesc, setShowDesc] = useState('');
+
+  const showModalDesc = (desc) => {
+    setShowDesc(desc);
+    setShowPopUp(!showPopUp);
+  };
 
   useEffect(() => {
     axios
@@ -32,6 +38,23 @@ export const Plyers = () => {
               onClick={() => setShowPopUp(false)}
             >
               X
+            </div>
+          </div>
+          <div className='wrapperDescription'>
+            <div className='wrapperDescLogo'>
+              <div className='descLogo'></div>
+            </div>
+            {/* lägg till riktig desc när de finns data  */}
+            <div className='description'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              provident ab aut tempore? Consequatur nobis fuga dolores facilis!
+              Velit, reprehenderit voluptatum. Nulla, commodi adipisci
+              repellendus incidunt ad, corrupti eaque provident iure ipsum
+              maiores, dolorem voluptatem eos? Nobis praesentium ipsum odio.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              maiores quo saepe sed blanditiis commodi, quos earum pariatur. In
+              autem suscipit eligendi aliquam cupiditate, voluptates dicta vel
+              adipisci maiores earum ipsam distinctio et nihil labore tempora id
             </div>
           </div>
         </div>
@@ -99,7 +122,7 @@ export const Plyers = () => {
             <div className='wrapperPlayer' key={player._id}>
               <div
                 className='wrapperImg'
-                onClick={() => setShowPopUp(!showPopUp)}
+                onClick={() => showModalDesc(player.desc)}
               >
                 <span class='fas fa-search-plus icon'></span>
                 <img
@@ -110,7 +133,6 @@ export const Plyers = () => {
               </div>
               <div className='wrapperDesc'>
                 <div className='name'>{player.name}</div>
-                <div className='desc'>{player.desc}</div>
               </div>
             </div>
           );

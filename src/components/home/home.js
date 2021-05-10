@@ -84,7 +84,7 @@ export const Home = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <i class='fab fa-instagram icons'></i>
+              <i className='fab fa-instagram icons'></i>
             </a>
           </div>
           <div className='contact'>
@@ -93,7 +93,7 @@ export const Home = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <i class='fab fa-facebook icons'></i>
+              <i className='fab fa-facebook icons'></i>
             </a>
           </div>
         </div>
