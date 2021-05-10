@@ -30,6 +30,7 @@ export const PlayerList = (props) => {
     axios
       .delete(`${API_URL}/deletePlayer/${data}`)
       .then((data) => {
+        console.log(data, 'data');
         newPlayerListAfterDelete(data);
       })
       .catch((err) => {
@@ -72,7 +73,7 @@ export const PlayerList = (props) => {
                 onClick={() => deletePlayer(player._id)}
               >
                 Delete
-                <i class='fas fa-trash-alt'></i>
+                <i className='fas fa-trash-alt'></i>
               </button>
             </div>
           </div>

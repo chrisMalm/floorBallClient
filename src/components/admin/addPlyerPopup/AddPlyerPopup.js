@@ -42,7 +42,7 @@ export const AddPlyerPopup = (props) => {
           <div className='playerName'>
             <label>Player name</label>
           </div>
-          <input autocomplete='off' type='text' name='name' ref={register} />
+          <input autoComplete='off' type='text' name='name' ref={register} />
         </div>
         <div className='wrapperDescription'>
           <div className='desc'>
@@ -58,7 +58,7 @@ export const AddPlyerPopup = (props) => {
         <div className='wrapperBtnAdd'>
           <button className='btnAdd' type='submit'>
             Add player
-            <i class='fas fa-user-plus'></i>
+            <i className='fas fa-user-plus'></i>
           </button>
         </div>
       </div>

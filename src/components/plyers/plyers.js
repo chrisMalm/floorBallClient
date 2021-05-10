@@ -8,6 +8,7 @@ import './players.css';
 export const Plyers = () => {
   const [playerList, setPlayerList] = useState([]);
   const [menyActive, setMenyActive] = useState(false);
+  const [showPopUp, setShowPopUp] = useState(false);
 
   useEffect(() => {
     axios
@@ -24,6 +25,18 @@ export const Plyers = () => {
   }, []);
   return (
     <div className='clientsContainer'>
+      {showPopUp ? (
+        <div className='popupContainer'>
+          <div className='wrapperCloseClientPopup'>
+            <div
+              className='closeClientPopup'
+              onClick={() => setShowPopUp(false)}
+            >
+              X
+            </div>
+          </div>
+        </div>
+      ) : null}
       {/* mobile device hamburger */}
       <div
         onClick={() => setMenyActive(!menyActive)}
@@ -85,7 +98,10 @@ export const Plyers = () => {
         {playerList.map((player) => {
           return (
             <div className='wrapperPlayer' key={player._id}>
-              <div className='wrapperImg'>
+              <div
+                className='wrapperImg'
+                onClick={() => setShowPopUp(!showPopUp)}
+              >
                 <span class='fas fa-search-plus icon'></span>
                 <img
                   className='playerImg'
