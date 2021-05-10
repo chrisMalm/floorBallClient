@@ -69,7 +69,7 @@ export const Home = () => {
         <div className='footer'>
           <div className='contact'>
             <a href='mailto:info@jact.eu'>
-              <i class='far fa-envelope icons'></i>
+              <i className='far fa-envelope icons'></i>
             </a>
           </div>
           <div className='contact'>

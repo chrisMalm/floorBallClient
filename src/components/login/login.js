@@ -44,12 +44,14 @@ export const Login = () => {
               <p>Wrong Password!</p>
             )}
           </div>
-          <button
-            className='closePopup'
-            onClick={() => setErrorPopup(!errorPopup)}
-          >
-            close
-          </button>
+          <div className='wrapperLoginBtn'>
+            <button
+              className='closePopup'
+              onClick={() => setErrorPopup(!errorPopup)}
+            >
+              close
+            </button>
+          </div>
         </div>
       ) : null}
       <div className='container'>
@@ -60,7 +62,7 @@ export const Login = () => {
             </div>
             <input
               type='text'
-              autocomplete='off'
+              autoComplete='off'
               name='username'
               ref={register({ required: 'Username is required' })}
             />

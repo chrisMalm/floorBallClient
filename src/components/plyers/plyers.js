@@ -15,7 +15,6 @@ export const Plyers = () => {
       .get(`${API_URL}/playerList`)
       .then((res) => {
         if (res) {
-          console.log(res.data);
           setPlayerList(res.data);
         }
       })

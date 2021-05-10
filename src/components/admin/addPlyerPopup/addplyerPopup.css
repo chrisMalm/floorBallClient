@@ -58,3 +58,28 @@
 textarea:focus {
   outline: none;
 }
+.wrapperLogoutBtn {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.btnLogout {
+  width: 100%;
+  color: black;
+  background: white;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 0px 10px #332b24;
+}
+.btnLogout:hover {
+  box-shadow: 0px 0px 20px #332b24;
+}
+
+.btnLogout:focus {
+  outline: none;
+}
