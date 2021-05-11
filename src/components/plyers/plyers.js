@@ -46,6 +46,7 @@ export const Plyers = () => {
             </div>
             {/* lägg till riktig desc när de finns data  */}
             <div className='description'>
+              {showDesc}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               provident ab aut tempore? Consequatur nobis fuga dolores facilis!
               Velit, reprehenderit voluptatum. Nulla, commodi adipisci

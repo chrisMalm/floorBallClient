@@ -4,12 +4,8 @@ import axios from 'axios';
 import './playerList.css';
 
 export const PlayerList = (props) => {
-  const {
-    setplayersArr,
-    playersArr,
-    updatedPlayerList,
-    setUpdatedPlayerList,
-  } = props;
+  const { setplayersArr, playersArr, updatedPlayerList, setUpdatedPlayerList } =
+    props;
 
   const newPlayerListAfterDelete = (data) => {
     const formerPlayerList = playersArr;
@@ -25,12 +21,12 @@ export const PlayerList = (props) => {
     setUpdatedPlayerList(newOb);
   };
 
-  const deletePlayer = (playerId) => {
+  const deletePlayer = (playerId, imageId) => {
+    console.log(imageId);
     const data = playerId;
     axios
-      .delete(`${API_URL}/deletePlayer/${data}`)
+      .delete(`${API_URL}/deletePlayer/${data}`, { data: { imgId: imageId } })
       .then((data) => {
-        console.log(data, 'data');
         newPlayerListAfterDelete(data);
       })
       .catch((err) => {
@@ -70,7 +66,7 @@ export const PlayerList = (props) => {
             <div className='wrapperBtnDelete'>
               <button
                 className='btnDelete'
-                onClick={() => deletePlayer(player._id)}
+                onClick={() => deletePlayer(player._id, player.img)}
               >
                 Delete
                 <i className='fas fa-trash-alt'></i>

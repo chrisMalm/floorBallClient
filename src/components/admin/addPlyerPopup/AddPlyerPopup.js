@@ -53,7 +53,7 @@ export const AddPlyerPopup = (props) => {
             </div>
             <input autoComplete='off' type='text' name='name' ref={register} />
           </div>
-          <div className='wrapperDescription'>
+          <div className='addPlayerWrapperDesc'>
             <div className='desc'>
               <label>Description</label>
             </div>
